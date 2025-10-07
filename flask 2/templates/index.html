@@ -1,0 +1,42 @@
+
+{% extends "base.html" %}
+{% block content %}
+<section id="home" class="section">
+  <h2>Home</h2>
+  <div class="home-container">
+    <!-- Profile Image -->
+    <div class="profile-image">
+      <img src="{{ url_for('static', filename='pic/balu.jpg') }}" alt="Profile Picture" class="profile-img">
+    </div>
+
+    <!-- Intro Text -->
+    <div class="intro-text">
+      <h2>Welcome to My Portfolio</h2>
+      <h4>I’m <strong>PEMMADI BALU</strong></h4>
+      <p>B.Tech – CSE (Artificial Intelligence & Data Science), Expected Graduation: 2025</p>
+      <p><i class="fa-solid fa-location-dot"></i> Location: Korangi,Kakinada, Andhra Pradesh</p>
+      <p><i class="fa-solid fa-envelope"></i> Email: balupemmadi44@gmail.com</p>
+      <p><i class="fa-solid fa-phone"></i> Mobile: 9989913586</p>
+      <p><i class="fa-solid fa-cake-candles"></i> Date of Birth: 13/06/2004</p>
+
+      <!-- Social Links -->
+      <!-- Social Links -->
+    <div class="social-links">
+
+     <a href="{{ url_for('static', filename='pemmadibalu-resume2.pdf') }}" target="_blank" class="social-btn cv">
+       <i class="fa-solid fa-file-pdf"></i> CV
+     </a>
+
+     <a href="https://www.linkedin.com/in/balu-pemmadi-3a45352a6/" target="_blank" class="social-btn linkedin">
+      <i class="fa-brands fa-linkedin"></i> LinkedIn
+     </a>
+
+     <a href="https://github.com/PemmadiBalu" target="_blank" class="social-btn github">
+      <i class="fa-brands fa-github"></i> GitHub
+     </a>
+   </div>
+  </div>
+</div>
+</section>
+{% endblock %}
+

@@ -1,0 +1,43 @@
+
+{% extends "base.html" %}
+{% block content %}
+<section class="section">
+  <h2>Projects</h2>
+
+  <div class="projects-grid">
+    <div class="project-card">
+      <a href="https://github.com/PemmadiBalu/python--calculator-" target="_blank">
+        <img src="{{ url_for('static', filename='pic/gui calculator.png') }}" alt="GUI Calculator" class="project-img">
+      </a>
+      <h3>GUI Calculator</h3>
+      <p>Built with Python Tkinter</p>
+    </div>
+
+    <div class="project-card">
+      <a href="https://github.com/PemmadiBalu/simple-ai-chart_bot-" target="_blank">
+        <img src="{{ url_for('static', filename='pic/Ai-chartboat.png') }}" alt="AI Chatbot" class="project-img">
+      </a>
+      <h3>AI Chatbot</h3>
+      <p>Simple chatbot with Python</p>
+    </div>
+
+    <div class="project-card">
+      <a href="https://github.com/PemmadiBalu/COVID_19_XRAY_DETECTION" target="_blank">
+        <img src="{{ url_for('static', filename='pic/covid-19-chest-xray.png') }}" alt="COVID-19 Detection" class="project-img">
+      </a>
+      <h3>COVID-19 Detection</h3>
+      <p>Deep learning with X-Ray images</p>
+    </div>
+
+    <div class="project-card">
+      <a href="https://github.com/PemmadiBalu/bot_for_telegram" target="_blank">
+        <img src="{{ url_for('static', filename='pic/telegram_bot_img.jpg') }}" alt="Telegram Bot" class="project-img">
+      </a>
+      <h3>Telegram Bot</h3>
+      <p>Automation with Python</p>
+    </div>
+  </div>
+  <p class="projects-summary">15+ projects completed</p>
+</section>
+{% endblock %}
+

@@ -1,0 +1,46 @@
+
+{% extends "base.html" %}
+{% block content %}
+<section class="section">
+  <h2>Certifications</h2>
+  <div class="certs-grid">
+    <div class="cert-card">
+      <img src="{{ url_for('static', filename='pic/edyst.png') }}" alt="Edyst Python Programming">
+      <p>Edyst Python Programming</p>
+    </div>
+    <div class="cert-card">
+      <img src="{{ url_for('static', filename='pic/pic/infosys.png') }}" alt="Infosys Machine Learning">
+      <p>Infosys Machine Learning</p>
+    </div>
+    <div class="cert-card">
+      <img src="{{ url_for('static', filename='pic/RPA.png') }}" alt="UiPath RPA Internship">
+      <p>UiPath RPA Internship</p>
+    </div>
+    <div class="cert-card">
+      <img src="{{ url_for('static', filename='pic/salesforce.png') }}" alt="Salesforce Internship">
+      <p>Salesforce Internship</p>
+    </div>
+<div class="cert-card">
+      <img src="{{ url_for('static', filename='pic/aiml.png') }}" alt="Google AI-ML Internship">
+      <p>Google AI-ML Internship</p>
+    </div>
+    <div class="cert-card">
+      <img src="{{ url_for('static', filename='pic/aws.png') }}" alt="AWS Cloud Certificate">
+      <p>AWS Cloud Certificate</p>
+    </div>
+
+  </div> 
+
+    <!-- Link for all certifications in one PDF -->
+     <div class="all-certs">
+       <p>
+        <a href="{{ url_for('static', filename='pic/all-certifications.pdf') }}" target="_blank" class="all-certs-btn">
+          📄 View All Certifications (PDF)
+        </a>
+      </p>
+    </div>
+ 
+
+</section>
+{% endblock %}
+

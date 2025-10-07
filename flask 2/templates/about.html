@@ -1,0 +1,15 @@
+
+{% extends "base.html" %}
+{% block content %}
+<section id="about" class="section">
+  <h2>About Me</h2>
+  <div class="about-container">
+    <img src="{{ url_for('static', filename='pic/balu.jpg') }}" alt="Profile Picture" class="profile-img">
+    <p>Hi! I’m Balu Pemmadi, a B.Tech graduate in Computer Science and Engineering (Artificial Intelligence & Data Science), Class of 2025, from KIET (affiliated with JNTUK), graduating with a 7.38 CGPA.
+       I’m passionate about Artificial Intelligence, Data Science, and Web Development, and I love solving real-world problems using Machine Learning, Deep Learning, and Data Analytics.
+       With hands-on experience in Python, Flask, HTML, CSS, JavaScript, SQL, and AI frameworks, I have developed projects such as AI Chatbots, Data Analysis Dashboards, and Automation Tools.
+    </p>
+  </div>
+</section>
+
+  {% endblock %}
